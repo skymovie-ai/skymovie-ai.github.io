@@ -1,37 +1,11 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>お問い合わせ・無料AI診断｜Sky Movie</title>
-<meta name="description" content="無料AI診断（Zoom 45分）のご予約・お問い合わせはこちら。メールまたはX（@ai_naisei_sora）のDMからお気軽にご連絡ください。">
-<meta property="og:title" content="お問い合わせ・無料AI診断｜Sky Movie">
-<meta property="og:description" content="無料AI診断（Zoom 45分）受付中。メールまたはX DMからお気軽にどうぞ。">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://skymoviesora-boop.github.io/contact.html">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232159d6'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>S</text></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<header class="site-header">
-  <div class="wrap">
-    <a href="index.html" class="brand">Sky Movie<small>AI内製化コンサルティング</small></a>
-    <button class="nav-toggle" onclick="document.querySelector('.nav').classList.toggle('open')">メニュー</button>
-    <nav class="nav">
-      <a href="index.html">ホーム</a>
-      <a href="services.html">サービス・料金</a>
-      <a href="about.html">プロフィール</a>
-      <a href="contact.html" class="btn">無料AI診断</a>
-    </nav>
-  </div>
-</header>
-
+---
+layout: default
+title: お問い合わせ・無料AI診断
+description: 無料AI診断（Zoom 45分）のご予約・お問い合わせはこちら。フォーム・メール・X（@ai_naisei_sora）のDMからお気軽にご連絡ください。
+---
 <section class="page-hero">
   <div class="wrap">
+    <p class="sec-eyebrow left light">CONTACT</p>
     <h1>お問い合わせ・無料AI診断</h1>
     <p>Zoom 45分の無料AI診断、受付中。まずはお気軽にご連絡ください。</p>
   </div>
@@ -39,8 +13,51 @@
 
 <section class="section">
   <div class="wrap">
-    <h2 class="section-title">ご連絡方法</h2>
-    <p class="section-sub">下記のどちらからでもOKです。「無料AI診断希望」とひとこと添えてお送りください。<br>通常1営業日以内にご返信し、Zoomの日程を調整します。</p>
+    <p class="sec-eyebrow">FORM</p>
+    <h2 class="section-title">お問い合わせフォーム</h2>
+    <p class="section-sub">通常1営業日以内にご返信し、無料AI診断ご希望の場合はZoomの日程を調整します。</p>
+    <form class="form" action="https://formsubmit.co/skymovie.sora@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="【HP】お問い合わせが届きました">
+      <input type="hidden" name="_next" value="https://skymoviesora-boop.github.io/thanks.html">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none">
+      <div class="field">
+        <label for="f-company">会社名<span class="opt">任意</span></label>
+        <input type="text" id="f-company" name="会社名" placeholder="株式会社〇〇">
+      </div>
+      <div class="field">
+        <label for="f-name">お名前<span class="req">必須</span></label>
+        <input type="text" id="f-name" name="お名前" required placeholder="山田 太郎">
+      </div>
+      <div class="field">
+        <label for="f-email">メールアドレス<span class="req">必須</span></label>
+        <input type="email" id="f-email" name="email" required placeholder="you@example.com">
+      </div>
+      <div class="field">
+        <label for="f-type">ご用件<span class="req">必須</span></label>
+        <select id="f-type" name="ご用件" required>
+          <option value="無料AI診断を希望">無料AI診断を希望（Zoom 45分）</option>
+          <option value="サービスについての質問">サービスについての質問</option>
+          <option value="その他">その他</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-msg">ご相談内容<span class="opt">任意</span></label>
+        <textarea id="f-msg" name="ご相談内容" placeholder="現在の課題や、自動化したい業務など、わかる範囲でご記入ください。"></textarea>
+      </div>
+      <div class="submit-row">
+        <button type="submit" class="btn big">送信する</button>
+      </div>
+      <p class="privacy">いただいた情報はお問い合わせ対応の目的にのみ使用します。</p>
+    </form>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <p class="sec-eyebrow">OTHER WAYS</p>
+    <h2 class="section-title">メール・DMでもOKです</h2>
+    <p class="section-sub">フォームが苦手な方は、こちらから直接どうぞ。「無料AI診断希望」とひとこと添えてください。</p>
     <div class="contact-cards">
       <div class="contact-card">
         <div class="icon">✉️</div>
@@ -58,31 +75,9 @@
   </div>
 </section>
 
-<section class="section alt">
-  <div class="wrap">
-    <h2 class="section-title">無料AI診断で分かること</h2>
-    <div class="cards">
-      <div class="card">
-        <div class="icon">🔍</div>
-        <h3>AIで変わる業務の特定</h3>
-        <p>御社の業務をヒアリングし、どの作業がAIで自動化・効率化できるかを具体的に整理します。</p>
-      </div>
-      <div class="card">
-        <div class="icon">🗺️</div>
-        <h3>導入までの道筋</h3>
-        <p>「何から・どの順番で」始めればいいか、御社の状況に合わせたステップをお伝えします。</p>
-      </div>
-      <div class="card">
-        <div class="icon">🤝</div>
-        <h3>売り込みはしません</h3>
-        <p>診断だけで終えていただいて構いません。まずはAI活用の可能性を知る場としてご活用ください。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="section">
   <div class="wrap">
+    <p class="sec-eyebrow">ABOUT US</p>
     <h2 class="section-title">事業者情報</h2>
     <div class="table-scroll" style="max-width:680px;margin:0 auto;">
       <table class="option-table">
@@ -96,23 +91,3 @@
     </div>
   </div>
 </section>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <span class="brand">Sky Movie<small>AIを、内製化する。</small></span>
-      </div>
-      <nav>
-        <a href="index.html">ホーム</a>
-        <a href="services.html">サービス・料金</a>
-        <a href="about.html">プロフィール</a>
-        <a href="contact.html">お問い合わせ</a>
-      </nav>
-    </div>
-    <p class="copy">© 2026 Sky Movie. All rights reserved.</p>
-  </div>
-</footer>
-
-</body>
-</html>

@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<section class="page-hero post-hero">
+  <div class="wrap">
+    <p class="post-meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%Y年%-m月%-d日" }}</time>{% if page.category %}<span class="post-cat">{{ page.category }}</span>{% endif %}</p>
+    <h1>{{ page.title }}</h1>
+  </div>
+</section>
+
+<article class="section">
+  <div class="wrap post-body">
+    {{ content }}
+  </div>
+</article>
+
+<div class="section" style="padding-top:0">
+  <div class="wrap" style="text-align:center">
+    <a href="/blog/" class="text-link">← ブログ一覧に戻る</a>
+  </div>
+</div>
+
+<div class="cta-band">
+  <div class="wrap">
+    <p class="sec-eyebrow light">FREE CONSULTATION</p>
+    <h2>まずは45分、話してみませんか？</h2>
+    <p>無料AI診断で、御社のどの業務がAIで変わるのかを具体的にお伝えします。</p>
+    <a href="/contact.html" class="btn big invert">無料AI診断を予約する</a>
+  </div>
+</div>

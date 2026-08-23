@@ -1,0 +1,40 @@
+---
+layout: default
+title: ブログ
+description: AI内製化・Claude Code活用・業務自動化のノウハウを発信するSky Movieのブログ。コードが書けない経営者のためのAI活用情報。
+permalink: /blog/
+---
+<section class="page-hero">
+  <div class="wrap">
+    <p class="sec-eyebrow left light">BLOG</p>
+    <h1>ブログ</h1>
+    <p>AI内製化・Claude Code活用・業務自動化のノウハウを発信しています。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="blog-list">
+      {% for post in site.posts %}
+      <a class="blog-item" href="{{ post.url }}">
+        <p class="meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y.%m.%d" }}</time>{% if post.category %}<span class="cat">{{ post.category }}</span>{% endif %}</p>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.description | default: post.excerpt | strip_html | truncate: 90 }}</p>
+        <span class="more">続きを読む →</span>
+      </a>
+      {% endfor %}
+      {% if site.posts.size == 0 %}
+      <p class="blog-empty">記事は準備中です。もうしばらくお待ちください。</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="wrap">
+    <p class="sec-eyebrow light">FREE CONSULTATION</p>
+    <h2>読むより、話すのが早いかもしれません。</h2>
+    <p>無料AI診断（Zoom 45分）で、御社の業務に合わせた活用イメージをお伝えします。</p>
+    <a href="/contact.html" class="btn big invert">無料AI診断を予約する</a>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+title: Sky Movie
+description: 外注依存を脱して、社内でAIを使いこなせる組織へ。伴走型AI内製化コンサルティング。
+url: "https://skymoviesora-boop.github.io"
+lang: ja
+timezone: Asia/Tokyo
+permalink: /blog/:title/
+plugins:
+  - jekyll-sitemap
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+exclude:
+  - README.md
